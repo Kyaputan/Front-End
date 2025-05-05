@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0px;
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 5rem;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Header Header Header Header Header"
+        "Leftside main main main rightside"
+        "Leftside main main main rightside"
+        "Leftside main main main rightside"
+        "footer footer footer footer footer";
+}
+
+.Header {
+    grid-area: Header;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 90px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Logo"
+        "nav";
+}
+
+.Logo {
+    grid-area: Logo;
+    border: 2px solid black;
+    margin: 1px;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    position: sticky; /* ให้ navbar ติดด้านบน */
+    top: 0; /* ตำแหน่งห่างจากด้านบน */
+    z-index: 10; /* เพื่อให้ navbar อยู่ด้านบนสุด */
+    background-color: white; /* พื้นหลังของ navbar */
+    border: 2px solid black;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเพื่อความสวยงาม */
+}
+
+.Leftside {
+    grid-area: Leftside;
+    border: 2px solid black;
+}
+
+.rightside {
+    grid-area: rightside;
+    border: 2px solid black;
+}
+
+.main {
+    grid-area: main;
+    border: 2px solid black;
+}
+
+.footer {
+    grid-area: footer;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.Head {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

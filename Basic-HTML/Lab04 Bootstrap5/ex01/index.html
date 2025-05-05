@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="th" data-bs-theme="dark">
+
+<head>
+  <title>Bootstrap_first</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/x-icon" href="img/befb83ee3f6731fb27293b2bdda2869a.png" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- animate CSS 4.1.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <main>
+    <div class="container p-3 mt-5 bg-white text-black broder">
+      <h1>My First Bootstrap Page</h1>
+      <p>This part is inside a .container class.</p>
+      <p>The .container class provides a responsive fixed width container.</p>
+    </div>
+    <div class="container mt-5 bg-primary">
+
+      <div class="row m-1">
+        <div class="col-*-* m-1">3</div>
+        <div class="col-*-* m-1 bg-dark text-white">4</div>
+        <div class="col-*-* m-1">5</div>
+      </div>
+      <div class="row m-1 border text-center">
+        <div class="col-sm-4 border">1</div>
+        <div class="col-sm-1 border">2</div>
+        <div class="col-sm-3 border">3</div>
+        <div class="col-sm-2 border">4</div>
+        <div class="col-sm-2 border">5</div>
+      </div>
+    </div>
+    <div class="row m-1 border mt-3 mb-3 text-center">
+      <div class="col-md-4 border">.col-sm-4</div>
+      <div class="col-md-8 border">.col-sm-8</div>
+    </div>
+    </div>
+
+
+    <div class="container-fluid mt-2 p-3 bg-white text-black te">
+      <p class="h1">h1 <mark class="pt-0 pb-0 px-3 rounded-4">Bootstrap</mark> heading</p>
+      <p class="h2">h2 <span class="badge bg-primary">Bootstrap</span> heading</p>
+      <p class="h3">h3 <span class="badge bg-secondary">Bootstrap</span> heading</p>
+      <p class="h4">h4 <span class="badge bg-success">Bootstrap</span> heading</p>
+      <p class="h5">h5 <span class="badge bg-danger rounded-pill">Bootstrap</span> heading</p>
+      <p class="h6">h6 <span class="badge bg-warning">Bootstrap</span> heading</p>
+      <button type="button" class="btn btn-primary">
+        Messages <span class="badge bg-danger">4</span>
+      </button>
+      <footer class="blockquote-footer pt-3">From WWF's website <kbd>ctrl + C</kbd></footer>
+    </div>
+
+
+    <div class="container mt-3 bg-white text-black p-3">
+      <h2>Contextual Backgrounds</h2>
+      <div class="border">
+        <div class="bg-primary p-3"></div>
+        <div class="bg-success p-3"></div>
+        <div class="bg-info p-3"></div>
+        <div class="bg-warning p-3"></div>
+        <div class="bg-danger p-3"></div>
+        <div class="bg-secondary p-3"></div>
+        <div class="bg-dark p-3"></div>
+        <div class="bg-light p-3 "></div>
+      </div>
+
+
+      <div class="container mt-3 pb-3">
+        <h2>Basic Table</h2>
+        <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+        <table class="table table-striped table-border table-light animate__animated animate__pulse">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Default</td>
+              <td>Defaultson</td>
+              <td>def@somemail.com</td>
+            </tr>
+            <tr class="table-primary">
+              <td>Primary</td>
+              <td>Joe</td>
+              <td>joe@example.com</td>
+            </tr>
+            <tr class="table-success">
+              <td>Success</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr class="table-danger">
+              <td>Danger</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr class="table-info">
+              <td>Info</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Warning</td>
+              <td>Refs</td>
+              <td>bo@example.com</td>
+            </tr>
+            <tr class="table-active">
+              <td>Active</td>
+              <td>Activeson</td>
+              <td>act@example.com</td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Secondary</td>
+              <td>Secondson</td>
+              <td>sec@example.com</td>
+            </tr>
+            <tr class="table-light">
+              <td>Light</td>
+              <td>Angie</td>
+              <td>angie@example.com</td>
+            </tr>
+            <tr class="table-dark">
+              <td>Dark</td>
+              <td>Bo</td>
+              <td>bo@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container mt-3 pb-2 border rounded-4">
+        <h2>Alerts</h2>
+        <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+        <div class="alert alert-success alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info alert-dismissible fade show">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+        </div>
+        <div class="alert alert-danger">
+          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+          <button type="button" class="btn btn-danger btn-sm">Danger</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+        </div>
+        <div class="alert alert-primary">
+          <strong>Primary!</strong> Indicates an important action.
+          <div class="d-grid m-1">
+            <button type="button" class="btn btn-primary btn-block">primary</button>
+          </div>
+          <div class="d-grid m-1">
+            <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+          </div>
+          <div class="d-grid m-1">
+            <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+          </div>
+        </div>
+        <div class="alert alert-secondary">
+          <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-dark">
+          <strong>Dark!</strong> Dark grey alert.
+        </div>
+        <div class="alert alert-light">
+          <strong>Light!</strong> Light grey alert.
+          <div class="d-grid m-1">
+            <button class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm"></span>
+            </button>
+          </div>
+          <div class="d-grid m-1">
+            <button class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm"></span>
+              Loading..
+            </button>
+          </div>
+          <div class="d-grid m-1">
+            <button class="btn btn-primary" disabled>
+              <span class="spinner-border spinner-border-sm"></span>
+              Loading..
+              <span class="spinner-grow spinner-grow-sm"></span>
+            </button>
+          </div>
+          <div class="d-grid m-1">
+            <button class="btn btn-primary" disabled>
+              <span class="spinner-grow spinner-grow-sm"></span>
+              Loading..
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid border rounded-4 p-4 mt-3 text-center">
+        <div class="btn-group ">
+          <button type="button" class="btn btn-info">Apple</button>
+          <button type="button" class="btn btn-danger">Samsung</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tablet</a></li>
+              <li><a class="dropdown-item" href="#">Smartphone</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="progress m-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:70%">70%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-success " style="width:40%">
+            Free Space
+          </div>
+          <div class="progress-bar bg-warning" style="width:10%">
+            Warning
+          </div>
+          <div class="progress-bar bg-danger " style="width:20%">
+            Danger
+          </div>
+        </div>
+        <div class="spinner-border text-primary m-2"></div>
+        <div class="container">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link disabled bg-secondary text-white"
+                href="javascript:void(0);">Previous</a></li>
+            <li class="page-item"><a class="page-link bg-success text-white" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link bg-success text-white" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link bg-info text-white" href="javascript:void(0);">Next</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container p-2 border rounded-2 mt-3">
+        <div class="card">
+          <br>
+          <div class="card bg-primary text-white">
+            <div class="card-body">Primary card</div>
+          </div>
+          <br>
+          <div class="card bg-success text-white">
+            <div class="card-body">Success card</div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">Info card</div>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <div class="container mt-3 border rounded-2 text-center pb-3">
+        <h2>Card Image</h2>
+        <p>Image at the top (card-img-top):</p>
+        <div class="d-flex flex-column align-items-center">
+          <div class="card" style="max-width:400px">
+            <img class="card-img-top" src="img/about-img2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="max-width:400px">
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+            <img class="card-img-bottom" src="img/about-img2.jpg" alt="Card image" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3 border rounded-2 bg-light text-black">
+      <h2>Accordion Example</h2>
+      <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements
+        under the specified parent will be closed when one of the collapsible item is shown.</p>
+      <div id="accordion">
+        <div class="card mb-1">
+          <div class="card-header ">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body ">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

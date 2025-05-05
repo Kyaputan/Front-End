@@ -1,0 +1,120 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: rgb(56, 47, 241);
+  background: linear-gradient(180deg, rgba(56, 47, 241, 1) 0%, rgba(47, 175, 241, 0.75) 25%, rgba(63, 215, 255, 0.499124649859944) 50%, rgba(189, 244, 255, 0.2498249299719888) 75%, rgba(255, 255, 255, 0) 100%);
+  color: #333;
+  padding: 0px;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* จัดสไตล์สำหรับคอนเทนเนอร์หลัก */
+.container {
+  height: auto;
+  width: 30%;
+  min-width: 30%;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* หัวเรื่อง */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* แบบฟอร์ม */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  background-color: rgb(236, 236, 236);
+  
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+#forget {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: -10px;
+}
+
+#forget:hover {
+  text-decoration: underline;
+}
+
+/* ข้อความเพิ่มเติม */
+.description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+  text-indent: 14px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; 
+  text-align: center;
+  padding: 2rem;
+  background: #0f2557;
+  color: white;
+}
+
+

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-size: cover;
+    background-image: url("images/blue-copy-space-digital-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(241, 160, 9);
+    margin: auto;
+    padding: 0px;
+    font-size: 300%;
+}
+
+table,
+th,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(233, 236, 28, 0.616);
+}
+
+th,
+td {
+    border-color: black;
+    padding: 5px;
+}
+
+td:hover {
+    background-color: #d6eeee;
+}
+
+table {
+    table-layout: fixed;
+    width: 50%;
+    margin: auto;
+}
+
+th {
+    font-size: 150%;
+}
+
+h2 {
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}

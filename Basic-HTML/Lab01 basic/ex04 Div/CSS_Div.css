@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url("images/blue-copy-space-digital-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    overflow: auto;
+}
+
+#Iframe{
+    border: 5px;
+    background-color: rgba(18, 22, 25, 0.184);
+    padding: 3px;
+    margin:0px 5px 5px 5px ;
+}
+
+div.contaier::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.top {
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-size: 300%;
+    color: rgb(183, 144, 70);
+}
+
+div.left {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    padding: 10px;
+    float: left;
+    height: 200px;
+}
+
+a {
+    color: olive; /* ใช้สีจากองค์ประกอบพ่อแม่ หรือเปลี่ยนสีตามที่ต้องการ */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+}
+
+a:hover{
+    color: aqua;
+}
+
+div.right {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    float: right;
+    width: 50%;
+    height: 200px;
+}
+
+div.left, div.right {
+    box-sizing: border-box;
+}
+iframe{
+    width: 1000px;
+    height: 400px;
+    margin: 10px;
+    border: 2px solid red;
+}
+button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#Now_time {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+#time {
+    text-align: center;
+}
+/* From Uiverse.io by alexruix */ 
+.loader {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #2a9d8f;
+    animation: loading-bounce 1s ease-in-out infinite alternate;
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 7px;
+    width: 45px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+    animation: loading-step 1s ease-in-out infinite;
+  }
+  
+  @keyframes loading-bounce {
+    0% {
+      transform: scale(1, 0.7);
+    }
+  
+    40% {
+      transform: scale(0.8, 1.2);
+    }
+  
+    60% {
+      transform: scale(1, 1);
+    }
+  
+    100% {
+      bottom: 140px;
+    }
+  }
+  
+  @keyframes loading-step {
+    0% {
+      box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+              0 10px 0 #f2f2f2,
+              -35px 50px 0 #f2f2f2,
+              -70px 90px 0 #bf2b2b;
+    }
+  
+    100% {
+      box-shadow: 0 10px 0 #f2f2f2,
+              -35px 50px 0 #f2f2f2,
+              -70px 90px 0 #f2f2f2,
+              -70px 90px 0 rgba(0, 0, 0, 0);
+    }
+  }

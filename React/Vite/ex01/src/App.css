@@ -1,0 +1,63 @@
+/* App.css - Custom styles on top of Bootstrap */
+
+/* Global styles */
+body {
+    font-family: 'Sarabun', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* Navbar customization */
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  /* Custom button styles */
+  .btn-primary {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card hover effects */
+  .card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: auto;
+  }
+  
+  /* Hero section styling */
+  .home-page .bg-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    h1.display-4 {
+      font-size: 2.5rem;
+    }
+  }
